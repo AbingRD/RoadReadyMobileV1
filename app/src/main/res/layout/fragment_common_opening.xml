@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragments.common.Opening_Fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/opLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="248dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="376dp"
+            android:contentDescription="@string/road_ready_logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/roadready"
+            tools:srcCompat="@drawable/roadready" />
+
+        <ImageView
+            android:id="@+id/opImageRedCircle"
+            android:layout_width="264dp"
+            android:layout_height="264dp"
+            android:layout_marginStart="350dp"
+            android:layout_marginTop="-100dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="#FA5C5C"
+            android:contentDescription="@string/red_circle"
+            app:layout_constraintBottom_toTopOf="@+id/opTextParagraph"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/opTextParagraph"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="178dp"
+            android:layout_marginTop="225dp"
+            android:layout_marginEnd="175dp"
+            android:layout_marginBottom="4dp"
+            android:defaultFocusHighlightEnabled="false"
+            android:editable="false"
+            android:focusedByDefault="false"
+            android:text="@string/text_opening_tagline"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/opLogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.521"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="Deprecated,TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/opImageCyanLeft"
+            android:layout_width="264dp"
+            android:layout_height="264dp"
+            android:layout_marginBottom="-80dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="#B30EB2F8"
+            android:contentDescription="@string/cyan_circle_left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/opImageCyanRight"
+            app:layout_constraintHorizontal_bias="0.223"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/opImageCyanRight"
+            android:layout_width="264dp"
+            android:layout_height="264dp"
+            android:layout_marginStart="192dp"
+            android:layout_marginBottom="-50dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="#B30EB2F8"
+            android:contentDescription="@string/cyan_circle_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
